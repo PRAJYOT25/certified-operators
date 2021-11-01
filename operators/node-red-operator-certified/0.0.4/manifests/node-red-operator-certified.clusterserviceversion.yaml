@@ -297,7 +297,6 @@ spec:
   version: 0.0.4
   description: |
     Node-RED is a flow-based programming tool, originally developed by IBM's Emerging Technology Services team and now a part of the JS Foundation.
-    
     **How to get the Application Images from registry?**
     -----
     - First Login to redhat catalogue webpage using your credentials.
@@ -383,3 +382,4 @@ spec:
     -----
 
     Once the Node-RED pod is ready, you can access the URL to the dashboard on the route path. The credentails to dashboard is admin and the password set in the "adminpassword" field.
+    
