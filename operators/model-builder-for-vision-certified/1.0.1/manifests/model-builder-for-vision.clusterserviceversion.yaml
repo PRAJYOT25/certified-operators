@@ -112,7 +112,7 @@ spec:
         - description: 'Leave as default unless directed by IBM Support'
           displayName: IBM Cloud Storage Size
           path: in_memory_storage.storage_size
-          x-descriptors: 
+          x-descriptors:
             - urn:alm:descriptor:com.tectonic.ui:fieldDependency:license.accept:true
             - urn:alm:descriptor:com.tectonic.ui:text
         - description: 'Leave as default unless directed by IBM Support'
