@@ -142,14 +142,14 @@ spec:
           displayName: Email Notification
           path: email_notification.accept
           x-descriptors:
-              - 'urn:alm:descriptor:com.tectonic.ui:booleanSwitch'
+            - 'urn:alm:descriptor:com.tectonic.ui:booleanSwitch'
         - description: Email address
           displayName: Email Address
           path: email_notification.vm_mail_recipient
           x-descriptors:
-              - >-
+            - >-
                 urn:alm:descriptor:com.tectonic.ui:fieldDependency:email_notification.accept:true
-              - 'urn:alm:descriptor:com.tectonic.ui:text'
+            - 'urn:alm:descriptor:com.tectonic.ui:text'
       statusDescriptors:
         - description: Keycloak
           displayName: User Management Console
