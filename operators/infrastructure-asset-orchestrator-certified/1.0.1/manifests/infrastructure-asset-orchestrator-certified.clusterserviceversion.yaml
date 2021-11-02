@@ -33,7 +33,7 @@ metadata:
       ]
     capabilities: Seamless Upgrades
     categories: Developer Tools
-    certified: "false"   
+    certified: "false"
     containerImage: quay.io/prajyor925/infrastructure-asset-orchestrator-operator:v13-sdk-12
     createdAt: "2021-08-19T12:00:00Z"
     support: Refer Readme - https://github.com/rhm-samples/infrastructure-asset-orchestrator/issues
@@ -65,36 +65,36 @@ spec:
         version: route.openshift.io/v1
       version: v1
       specDescriptors:
-        - description: 'For production purposes leave "prod" as default. For testing purposes, choose "lite"'    
+        - description: 'For production purposes leave "prod" as default. For testing purposes, choose "lite"'
           displayName: Installation type
           path: env_type
-          x-descriptors: 
+          x-descriptors:
             - urn:alm:descriptor:com.tectonic.ui:select:lite
-            - urn:alm:descriptor:com.tectonic.ui:select:prod 
-        - description: 'If using external DB set value to true. Set to false otherwise.'    
+            - urn:alm:descriptor:com.tectonic.ui:select:prod
+        - description: 'If using external DB set value to true. Set to false otherwise.'
           displayName: External DB
           path: external_db.enabled
-          x-descriptors: 
+          x-descriptors:
             - urn:alm:descriptor:com.tectonic.ui:booleanSwitch
-        - description: 'Set storage size'    
+        - description: 'Set storage size'
           displayName: Postgres Storage Size
           path: postgres.storage_size
-          x-descriptors: 
+          x-descriptors:
             - urn:alm:descriptor:com.tectonic.ui:fieldDependency:external_db.enabled:false
             - urn:alm:descriptor:com.tectonic.ui:text
-        - description: 'Set storage class'    
+        - description: 'Set storage class'
           displayName: Postgres Storage Class
           path: postgres.storage_class
-          x-descriptors: 
+          x-descriptors:
             - urn:alm:descriptor:com.tectonic.ui:fieldDependency:external_db.enabled:false
             - urn:alm:descriptor:com.tectonic.ui:select:ibmc-block-bronze
             - urn:alm:descriptor:com.tectonic.ui:select:ibmc-block-silver
             - urn:alm:descriptor:com.tectonic.ui:select:ibmc-block-gold
             - urn:alm:descriptor:com.tectonic.ui:select:ibmc-block-custom
-        - description: 'Enable TLS for Postgres'    
+        - description: 'Enable TLS for Postgres'
           displayName: Postgres TLS
           path: postgres.enable_pg_tls
-          x-descriptors: 
+          x-descriptors:
             - urn:alm:descriptor:com.tectonic.ui:fieldDependency:external_db.enabled:false
             - urn:alm:descriptor:com.tectonic.ui:booleanSwitch
   description: Infrastructure Asset Orchestrator provides users access to cloud resources
@@ -124,7 +124,7 @@ spec:
           - list
           - patch
           - update
-          - watch   
+          - watch
         - apiGroups:
           - apps
           resources:
@@ -203,7 +203,7 @@ spec:
           - list
           - patch
           - update
-          - watch          
+          - watch
         - apiGroups:
           - ""
           resources:
@@ -228,7 +228,7 @@ spec:
           - list
           - patch
           - update
-          - watch          
+          - watch
         - apiGroups:
           - ""
           resources:
@@ -293,7 +293,7 @@ spec:
           - list
           - patch
           - update
-          - watch          
+          - watch
         - apiGroups:
           - apps
           - extensions
@@ -403,14 +403,14 @@ spec:
           - config.openshift.io
           resources:
           - clusterversions
-          verbs: 
-          - get 
-          - list 
-          - watch 
-          - create 
-          - update 
-          - patch 
-          - delete  
+          verbs:
+          - get
+          - list
+          - watch
+          - create
+          - update
+          - patch
+          - delete
         - apiGroups:
           - coordination.k8s.io
           resources:
@@ -419,7 +419,7 @@ spec:
           - get
         serviceAccountName: orchestrator-operator
       permissions:
-      - rules:                                                                                                    
+      - rules:                                                                                                
         - apiGroups:
           - security.openshift.io
           resourceNames:
