@@ -419,7 +419,7 @@ spec:
           - get
         serviceAccountName: orchestrator-operator
       permissions:
-      - rules:                                                                                                
+      - rules:                                                                                            
         - apiGroups:
           - security.openshift.io
           resourceNames:
