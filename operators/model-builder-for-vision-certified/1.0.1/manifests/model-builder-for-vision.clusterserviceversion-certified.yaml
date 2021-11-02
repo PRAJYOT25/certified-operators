@@ -49,7 +49,7 @@ metadata:
     operators.operatorframework.io/project_layout: ansible.sdk.operatorframework.io/v1
     support: Refer Readme - https://github.com/rhm-samples/ibm-modelbuilder-for-vision/issues
     olm.skipRange: "<1.0.1"
-  name: ibm-modelbuilder-for-vision
+  name: ibm-modelbuilder-for-vision-certified
   namespace: placeholder
 spec:
   apiservicedefinitions: {}
